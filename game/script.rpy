@@ -10,42 +10,42 @@ label start:
     scene bg black
     '(Марс заходит в кабинет Импиуса.)'
 
-    show Mars at left
+    show mars at left
     mars 'Звали, командир?'
-    hide Mars
-    show Impius at right
+    hide mars
+    show impius at right
     impius 'Звал. Как поживает мама? Все в порядке?'
-    hide Impius
-    show Mars at left
+    hide impius
+    show mars at left
     mars 'Просто скажи, что от меня нужно.'
-    hide Mars
-    show Impius at right
+    hide mars
+    show impius at right
     impius 'Да я же просто измываюсь, не бери в голову. Я же не монстр.'
-    hide Impius
-    show Mars at left
+    hide impius
+    show mars at left
     mars 'Я сейчас уйду.'
-    hide Mars
-    show Impius at right
+    hide mars
+    show impius at right
     impius 'Никуда ты не уйдешь. Ты мой, забыл? И ты будешь делать то, что я...'
-    hide Impius
-    show Mars at left
+    hide impius
+    show mars at left
     mars 'Да, да. Если ты, наконец, скажешь, что именно я должен делать.'
-    hide Mars
-    show Impius at right
+    hide mars
+    show impius at right
     impius 'Не дерзи мне. Дело вот в чем. У нас закончились ингредиенты. Ты знаешь, о чем я. Так что иди и достань нам еще.'
-    hide Impius
-    show Mars at left
+    hide impius
+    show mars at left
     mars 'Идти и достать? Каким образом? Где?'
-    hide Mars
-    show Impius at right
+    hide mars
+    show impius at right
     impius 'Я скину тебе информацию на интерлинк.'
-    hide Impius
-    show Mars at left
+    hide impius
+    show mars at left
     mars 'И что мне с ней делать?'
-    hide Mars
-    show Impius at right
+    hide mars
+    show impius at right
     impius 'Еще одно слово, которое может показаться мне грубым и твоя семья...'
-    hide Impius
+    hide impius
 
     '(Марс вышел из кабинета, хлопнув дверью.)'
     '(По пути к шаттлу остановился в коридоре, думая, зайти в свою каюту или сразу отправиться на задание.)'
@@ -65,30 +65,30 @@ label stateroom:
     #TODO сцена с каютой
     '(На столе фотография семьи Марса: приемные родители кот и кошка с сероватой шерстью.)'
     '(К рамке прикреплена записка: "Не теряйся и не бойся, любим".)'
-    show Mars at left
+    show mars at left
     mars 'Мои родители всегда горячо любили меня. От того в сотню раз больнее работать на того, кто угрожает им расправой.'
     mars 'Сколько можно а? Почему я должен бояться его? Сколько прямо сейчас пиратов на станции? Штук... восемь? Разве я не справлюсь со всеми? Если будут идти по одному...'
     mars 'Можно занять кабинет, забаррикадироваться...'
     mars 'Нет. Это самоубийство. Я не могу так подвести родителей.'
     mars 'Или...'
-    hide Mars
+    hide mars
     menu:
         "К дьяволу!":
             jump attack
         "Нет, точно нет.":
-            show Mars at left
+            show mars at left
             mars 'Это безумие. Нужно ждать другого варианта, более удачного стечения обстоятельств.'
             mars 'Сейчас нужно делать, как он говорит. Подчиняться. Чтобы потом нанести удар.'
             mars 'Пойду к шаттлу.'
-            hide Mars
+            hide mars
             jump mission
 
 label attack:
     '(Марс врывается в кабинет к Импиусу.)'
-    show Impius at right
+    show impius at right
     impius 'Какого черты ты творишь? Совсем башню снесло?!'
-    hide Impius
-    show Mars at left
+    hide impius
+    show mars at left
     mars 'Заткнись, тварь.'
     'Выстрел.'
     'Промах.'
@@ -96,10 +96,10 @@ label attack:
     'Импиус скрылся под столом.'
     'Промах.'
     'Звук тревожной кнопки.'
-    hide Mars
-    show Mars at left
+    hide mars
+    show mars at left
     mars 'Черт сейчас сюда сбегутся его псы. Нужно уходить. Что же я натворил...'
-    hide Mars
+    hide mars
 
     menu:
         "Нет. Я доведу это до конца.":
@@ -111,12 +111,12 @@ label attack:
         
 label madness:
     '(В комнату врываются приспешники Импиуса)'
-    show Impius at right
+    show impius at right
     impius 'Убейте его! Предатель!'
     '(Марс пытается отстреливаться, но получает ранение и падает.)'
     impius 'У тебя последний шанс, ублюдок.'
     '(Импиус приставляет пистолет к голове Марса.)'
-    hide Impius
+    hide impius
 
     menu:
         "И как мне поступить?"
@@ -128,21 +128,21 @@ label madness:
             'Возможно стоит попытать счастья в поисках таких миров.'
 
         "Прости, я не знаю, что на меня нашло...":
-            show Impius at right
+            show impius at right
             impius 'Надо же, одумался! Кто-нибудь, отнесите его в лазарет. Пусть оклемается и отправляется на задание ПУЛЕЙ.'
             impius 'И Марс, сегодня ты забил первый гвоздь в крышку гроба своих треклятых родителей. Не жди пощады, если расстроишь меня еще хоть один раз.'
-            hide Impius
+            hide impius
             '(Марса уносят в лазарет.)'
             
 
             #TODO сцена в лазарете
             '(Марс лежит на койке, его ранение уже обработал робот, все почти зажило. Еще каких-то пять минут и можно отправляться.)'
-            show Mars at left
+            show mars at left
             mars 'Как же я сглупил... Что мне теперь делать? Идиот, идиот! Чего ты добивался? Справедливости? Один против девятерых, ну и бред.'
             mars 'Ладно. Нужно оправиться от этого поскорее, не забивать голову мыслями о родителях. Нужно выполнить задание и какое-то время не попадаться на глаза Импиусу.'
             mars 'Черт, теперь он считает меня бомбой с часовым механизмом. При любой удобной ситуации он от меня избавится.'
             mars 'Все, успокойся. Нужно идти.'
-            hide Mars
+            hide mars
 
             jump mission
 
@@ -151,21 +151,21 @@ label relax:
     #TODO сцена 
     '(Марс бежит к шаттлу, по пути к нему выбегает ошарашенный пират.)'
     dumbfoundedPirate 'Ты куда несешься? Что стряслось?'
-    show Mars at left
+    show mars at left
     mars 'На шефа напали! Скорее туда, я бегу к шаттлу, нужно срочно вылетать.'
-    hide Mars
+    hide mars
     dumbfoundedPirate 'Что?! Куда вылетать? Кто напал?'
-    show Mars at left
+    show mars at left
     mars 'Нет времени, иди помоги ему!'
-    hide Mars
+    hide mars
     dumbfoundedPirate 'А... Хорошо, хорошо!'
     '(Пират убегает в направлении кабинета Импиуса.)'
     '(Марс бежит к шаттлу.)'
     '(Добравшись, он задействует аварийную систему запуска корабля, так как вылет не был согласован с капитаном. Шаттл отчаливает.)'
     '(По интерлинку с Марсом связывается Импиус.)'
-    show Impius at right
+    show impius at right
     impius 'Я тебя сожру, ты слышишь?! Уничтожу тебя и семейку твою поганую! Тебе лучше лететь к ним прямо сейчас, иначе будешь хоронить обгорелые скелеты!'
-    hide Impius
+    hide impius
     '(Связь обрывается.)'
     
     '(Марс Отправляется к семье.)'
