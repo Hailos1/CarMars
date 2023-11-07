@@ -8,8 +8,9 @@ init:
     define mars = Character('Марс', color="#440078")
     define impius = Character('Импиус', color="#ff0000")
 
-    image kepler186 = 'Kepler186f.jpg'
-    image blackBG = 'blackBG.jpg'
+    image bg kepler186: 
+        'Kepler186f.jpg'
+        xysize parallax_bg_size
     image containersBG = 'склад.jpg'
     image Impius : 
         'Impius.png'
