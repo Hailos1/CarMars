@@ -16,6 +16,9 @@ init:
     # Определение персонажей игры.
     define mars = Character('Марс', color="#440078", image='Mars')
     define impius = Character('Импиус', color="#ff0000", image='Impius')
+    define benignus = Character('Бунигнус', color="#005ac2")
+    define marte = Character('Марта', color="#ff7bd3")
+    define kletus = Character('Клетус', color="#78ffb5")
 
     image bg kepler186: 
         'Kepler186f.jpg'    

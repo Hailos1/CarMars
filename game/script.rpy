@@ -59,7 +59,7 @@ label start:
 label mission:
     #TODO сцена с кораблём
     '(Марс садится в шаттл и отчаливает.)'
-    jump next
+    jump CH1
 
 label stateroom:
     #TODO сцена с каютой

@@ -2,23 +2,17 @@
 errors listed below, and try again.
 
 
-The label optional_name is defined twice, at File "game/script.rpy", line 29:
-    menu optional_name:
-and File "game/script.rpy", line 50:
-    menu optional_name:
+The label start is defined twice, at File "game/chapter_one.rpy", line 5:
+label start:
+and File "game/script.rpy", line 3:
+label start:
 
 
-The label optional_name is defined twice, at File "game/script.rpy", line 50:
-    menu optional_name:
-and File "game/script.rpy", line 71:
-    menu optional_name:
-
-
-The label optional_name is defined twice, at File "game/script.rpy", line 71:
-    menu optional_name:
-and File "game/script.rpy", line 86:
-    menu optional_name:
+The label mission is defined twice, at File "game/chapter_one.rpy", line 62:
+label mission:
+and File "game/script.rpy", line 59:
+label mission:
 
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Tue Nov  7 16:39:14 2023
+Tue Dec 26 19:42:16 2023
