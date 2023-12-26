@@ -1,4 +1,6 @@
 init:
+    $ flag = 1
+    $ FatherIsDead = True
     image Impius : 
         'Impius.png'
         zoom 1.0
